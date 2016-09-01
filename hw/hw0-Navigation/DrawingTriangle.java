@@ -1,15 +1,24 @@
 public class DrawingTriangle{
     public static void main(String[] args){
-        int num_line = 5;
+            DrawingTriangle(10);
+        }
+   
+
+    public static void DrawingTriangle(int N){
+    
+        int num_line = N;
         int num_star = 0;
-        while(num_line > 0){
+        while(num_line >0){
+            while(num_line > 0){
             String cur_line = "*";
-            for (int i = 0; i< num_star; i++){
+            for (int i = 0; i < num_star; i++){
                 cur_line = cur_line + "*";
             }
             System.out.println(cur_line);
-            num_star += 1;
+            num_star ++;
             num_line --;
+            }
         }
+        return;
     }
 }
